@@ -23,7 +23,7 @@ export function AuditForm({ locale }: { locale: "en" | "ar" }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="mx-auto mt-10 max-w-2xl rounded-[2rem] border border-slate-200 bg-slate-50 p-6 text-start shadow-sm"
+      className="calm-card mx-auto mt-10 max-w-2xl bg-slate-50 p-6 text-start"
     >
       <div className="grid gap-4 md:grid-cols-2">
         <label className="block">

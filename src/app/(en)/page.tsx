@@ -4,7 +4,7 @@ import { PortfolioPage } from "@/components/PortfolioPage";
 export const metadata: Metadata = {
   title: "Amr Edrees | Performance Marketing & Growth Specialist",
   description:
-    "Growth systems for GCC B2B and real estate teams that connect paid media, qualified pipeline, tracking, CRM feedback, and revenue.",
+    "Growth systems for GCC teams that connect paid media, qualified pipeline, tracking, sales feedback, and revenue.",
   alternates: {
     canonical: "/",
     languages: {
@@ -14,8 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Amr Edrees | Performance Marketing & Growth Specialist",
-    description:
-      "Turn GCC ad spend into qualified B2B pipeline and real estate opportunities.",
+    description: "Turn marketing spend into measurable growth with clearer tracking and stronger decisions.",
     type: "website"
   }
 };

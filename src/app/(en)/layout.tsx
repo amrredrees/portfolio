@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s"
   },
   description:
-    "Performance marketing and growth for GCC B2B and real estate teams focused on qualified pipeline, tracking, CRM feedback, and revenue decisions."
+    "Performance marketing and growth for GCC teams focused on qualified pipeline, tracking, sales feedback, and revenue decisions."
 };
 
 export default function EnglishLayout({ children }: Readonly<{ children: React.ReactNode }>) {

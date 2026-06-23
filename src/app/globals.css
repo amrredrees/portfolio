@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
+  --card-radius: 1.5rem;
+  --card-border: #e2e8f0;
+  --card-shadow: 0 12px 35px rgba(15, 23, 42, 0.055);
 }
 
 * {
@@ -38,8 +41,8 @@ body {
 }
 
 .section-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.05;
+  font-size: clamp(2.35rem, 5vw, 4rem);
+  line-height: 1.04;
   font-weight: 950;
   letter-spacing: -0.04em;
 }
@@ -50,11 +53,35 @@ body {
 }
 
 .section-intro {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   max-width: 46rem;
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.75;
   color: #64748b;
+}
+
+.calm-card {
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  background: #ffffff;
+  box-shadow: var(--card-shadow);
+}
+
+.calm-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  background: #f8fafc;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+::selection {
+  background: #dbeafe;
+  color: #172554;
 }
 
 a,

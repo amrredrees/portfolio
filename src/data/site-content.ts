@@ -10,30 +10,27 @@
       { label: "Growth OS", href: "#method" },
       { label: "About", href: "#about" }
     ],
-    headerCta: "Book a 15-min Growth Audit",
+    headerCta: "Book a Free Audit",
     hero: {
-      badge: "B2B • Real Estate • GCC Growth • Tracking • Lead Quality",
-      headline:
-        "Turn GCC ad spend into qualified B2B pipeline and real estate opportunities — not just more leads.",
+      badge: "GCC Growth • Performance • Tracking • Lead Quality",
+      headline: "Turn marketing spend into measurable growth.",
       subheadline:
-        "I help B2B and real estate teams connect paid media, landing pages, tracking, CRM feedback, and sales outcomes so they can scale what creates real revenue.",
-      primaryCta: "Book a Free 15-min Growth Audit",
+        "I connect campaigns, funnels, tracking, and sales signals to improve lead quality and revenue decisions.",
+      primaryCta: "Book a Free Audit",
       secondaryCta: "View Case Studies",
       proof: ["120K+ paid subscriptions", "15M+ SAR managed spend", "GCC market experience"],
-      note:
-        "Not just more clicks. Better leads, cleaner attribution, stronger funnels, and decisions your sales team can actually use."
+      note: "Clearer signals. Better decisions. Stronger growth."
     },
     trust: {
       kicker: "Trust context",
-      title: "GCC growth experience across sectors where lead quality and spend decisions matter.",
+      title: "GCC growth experience across complex customer journeys.",
       sectorsLabel: "Sectors",
       sectors: ["B2B", "Real Estate", "Education", "Healthcare", "SaaS", "Services", "E-commerce"],
       stackLabel: "Tech stack",
       stack: ["GA4", "GTM", "Meta Pixel", "Google Ads", "Looker Studio", "HubSpot", "CRM"]
     },
     highlightsTitle: "Selected performance highlights",
-    highlightsIntro:
-      "These numbers represent selected examples and professional highlights across acquisition, subscription growth, revenue impact, and optimization work.",
+    highlightsIntro: "Selected outcomes across acquisition, revenue, and campaign efficiency.",
     highlights: [
       {
         value: "8+",
@@ -69,28 +66,27 @@
     problems: {
       kicker: "What I fix",
       title: "The problem is rarely ads alone.",
-      intro:
-        "A campaign can generate leads and still fail commercially if tracking is unclear, the funnel is weak, or sales feedback never returns to marketing.",
+      intro: "Strong campaigns still fail when the funnel, tracking, and sales feedback are disconnected.",
       items: [
         {
-          title: "Sales complains about weak leads",
-          before: "You see form submissions and low CPL.",
-          after: "You know which campaigns produce qualified conversations, visits, subscriptions, or deals."
+          title: "Weak lead quality",
+          before: "You see forms and a low CPL.",
+          after: "You see which campaigns create qualified opportunities."
         },
         {
-          title: "Tracking exists but decisions are still unclear",
-          before: "GA4, GTM, pixels, forms, calls, WhatsApp, and CRM work separately.",
-          after: "The funnel is measured around useful actions and connected to business outcomes."
+          title: "Disconnected tracking",
+          before: "Tools and conversion signals sit apart.",
+          after: "Useful actions connect to business outcomes."
         },
         {
-          title: "The landing page leaks intent",
-          before: "Ads bring visitors, but the offer, CTA, form, trust, or follow-up reduces conversion quality.",
-          after: "The post-click journey is audited and improved based on friction and intent."
+          title: "Leaky landing pages",
+          before: "Post-click friction weakens intent.",
+          after: "The journey is clearer, faster, and more persuasive."
         },
         {
-          title: "Reports do not guide budget decisions",
-          before: "Reports show impressions, clicks, leads, and CPL.",
-          after: "Reports explain what to scale, pause, fix, and test next."
+          title: "Passive reporting",
+          before: "Reports list clicks, leads, and CPL.",
+          after: "Reports show what to scale, fix, or stop."
         }
       ]
     },
@@ -117,9 +113,8 @@
     },
     services: {
       kicker: "Services",
-      title: "Focused growth services for better leads, cleaner tracking, and stronger decisions.",
-      intro:
-        "The services are designed for businesses that need practical performance improvement, not generic marketing activity.",
+      title: "Focused services for clearer growth.",
+      intro: "Practical support across acquisition, measurement, funnels, and sales feedback.",
       items: [
         {
           title: "Lead Generation Campaigns",
@@ -155,11 +150,11 @@
     },
     cases: {
       kicker: "Case studies",
-      title: "Selected work and growth situations",
-      intro:
-        "The homepage shows the strongest cases first. Additional strategic work is included below to show the wider operating range.",
+      title: "Selected growth work",
+      intro: "Compact examples of acquisition, efficiency, and measurement work.",
       featuredTitle: "Featured cases",
       otherTitle: "Other strategic work",
+      proofLine: "Supporting snapshots available on request.",
       featured: [
         {
           title: "Scaling Paid Acquisition to 120,000+ Paid Subscriptions",
@@ -259,9 +254,8 @@
     },
     contact: {
       kicker: "Contact",
-      title: "Book a free 15-minute Growth Audit",
-      intro:
-        "Share your website and current problem. I’ll review the growth path and contact you with the most important improvement points.",
+      title: "Book a Free Audit",
+      intro: "Share your website and current challenge. I’ll identify the clearest improvement opportunities.",
       email: "Email",
       whatsapp: "WhatsApp",
       linkedin: "LinkedIn"
@@ -279,30 +273,27 @@
       { label: "نظام النمو", href: "#method" },
       { label: "نبذة", href: "#about" }
     ],
-    headerCta: "احجز تشخيص 15 دقيقة",
+    headerCta: "احجز مراجعة مجانية",
     hero: {
-      badge: "B2B • عقارات • نمو في الخليج • تتبع • جودة ليدز",
-      headline:
-        "حوّل الإنفاق الإعلاني في الخليج إلى فرص B2B وعقارية مؤهلة — وليس مجرد ليدز أكثر.",
+      badge: "نمو في الخليج • أداء • تتبع • جودة الفرص",
+      headline: "حوّل الإنفاق التسويقي إلى نمو يمكن قياسه.",
       subheadline:
-        "أساعد فرق B2B والعقارات على ربط الإعلانات، صفحات الهبوط، التتبع، ملاحظات الـ CRM، ونتائج المبيعات لتوسيع ما يصنع إيرادات فعلية.",
-      primaryCta: "احجز تشخيص مجاني 15 دقيقة",
+        "أربط الحملات والفانل والتتبع وإشارات المبيعات لتحسين جودة الفرص وقرارات الإيرادات.",
+      primaryCta: "احجز مراجعة مجانية",
       secondaryCta: "شاهد الحالات",
       proof: ["120K+ اشتراك مدفوع", "15M+ ريال ميزانيات إعلانية", "خبرة في أسواق الخليج"],
-      note:
-        "ليس الهدف كليكات أكثر فقط، بل ليدز أفضل، تتبع أوضح، فانل أقوى، وقرارات يستطيع فريق المبيعات الاعتماد عليها."
+      note: "إشارات أوضح. قرارات أفضل. نمو أقوى."
     },
     trust: {
       kicker: "الثقة والسياق",
-      title: "خبرة نمو في الخليج عبر قطاعات تعتمد على جودة الفرص ودقة قرارات الإنفاق.",
+      title: "خبرة نمو في الخليج عبر رحلات عملاء معقدة.",
       sectorsLabel: "القطاعات",
       sectors: ["B2B", "العقارات", "التعليم", "الرعاية الصحية", "SaaS", "الخدمات", "التجارة الإلكترونية"],
       stackLabel: "الأدوات والتقنيات",
       stack: ["GA4", "GTM", "Meta Pixel", "Google Ads", "Looker Studio", "HubSpot", "CRM"]
     },
     highlightsTitle: "أبرز مؤشرات الأداء",
-    highlightsIntro:
-      "هذه الأرقام تمثل أمثلة مختارة وخبرات مهنية في الاكتساب، نمو الاشتراكات، تأثير الإيرادات، وتحسين كفاءة الحملات.",
+    highlightsIntro: "نتائج مختارة في الاكتساب والإيرادات وكفاءة الحملات.",
     highlights: [
       {
         value: "8+",
@@ -338,28 +329,27 @@
     problems: {
       kicker: "ما الذي أعالجه؟",
       title: "المشكلة غالبًا ليست في الإعلان وحده.",
-      intro:
-        "قد تحقق الحملة ليدز، لكنها تفشل تجاريًا إذا كان التتبع غير واضح، أو الفانل ضعيف، أو ملاحظات المبيعات لا تعود إلى التسويق.",
+      intro: "حتى الحملات القوية تتعطل عندما ينفصل الفانل والتتبع وملاحظات المبيعات.",
       items: [
         {
-          title: "المبيعات تشتكي من ضعف جودة الليدز",
-          before: "أنت ترى نماذج مكتملة وCPL منخفض.",
-          after: "أنت تعرف أي الحملات تنتج محادثات مؤهلة، زيارات، اشتراكات، أو صفقات."
+          title: "جودة فرص ضعيفة",
+          before: "ترى نماذج مكتملة وCPL منخفضًا.",
+          after: "تعرف أي الحملات تصنع فرصًا مؤهلة."
         },
         {
-          title: "التتبع موجود لكن القرار غير واضح",
-          before: "GA4 وGTM والبيكسل والنماذج والمكالمات والواتساب والـ CRM يعملون بشكل منفصل.",
-          after: "يتم قياس الفانل حول أفعال مفيدة ومتصلة بنتائج البيزنس."
+          title: "تتبع غير مترابط",
+          before: "الأدوات وإشارات التحويل منفصلة.",
+          after: "الأفعال المهمة مرتبطة بنتائج العمل."
         },
         {
-          title: "صفحة الهبوط تفقد نية العميل",
-          before: "الإعلان يجلب الزيارة، لكن العرض أو الصفحة أو CTA أو النموذج أو المتابعة يقلل جودة التحويل.",
-          after: "يتم تحليل رحلة ما بعد الكليك وتحسينها بناءً على الاحتكاك والنية."
+          title: "تسريب في صفحة الهبوط",
+          before: "احتكاك ما بعد النقر يضعف النية.",
+          after: "الرحلة أوضح وأسرع وأكثر إقناعًا."
         },
         {
-          title: "التقارير لا تقود قرارات ميزانية",
-          before: "التقارير تعرض ظهور، كليكات، ليدز، وCPL.",
-          after: "التقارير تشرح ما الذي يجب توسيعه، إيقافه، إصلاحه، أو اختباره."
+          title: "تقارير بلا قرارات",
+          before: "التقارير تعرض النقرات والفرص وCPL.",
+          after: "التقارير تحدد ما يتوسع أو يُصلح أو يتوقف."
         }
       ]
     },
@@ -386,9 +376,8 @@
     },
     services: {
       kicker: "الخدمات",
-      title: "خدمات نمو مركزة لتحسين جودة الليدز، وضوح التتبع، وقوة القرارات.",
-      intro:
-        "الخدمات مصممة للشركات التي تحتاج إلى تحسين أداء عملي، وليس مجرد نشاط تسويقي عام.",
+      title: "خدمات مركزة لنمو أوضح.",
+      intro: "دعم عملي للاكتساب والقياس والفانل وملاحظات المبيعات.",
       items: [
         {
           title: "حملات Lead Generation",
@@ -424,11 +413,11 @@
     },
     cases: {
       kicker: "الحالات",
-      title: "نماذج مختارة من العمل ومواقف النمو",
-      intro:
-        "تعرض الصفحة الرئيسية أقوى الحالات أولًا، ثم أعمالًا استراتيجية إضافية لتوضيح نطاق الخبرة.",
-      featuredTitle: "الحالات الرئيسية",
+      title: "أعمال نمو مختارة",
+      intro: "أمثلة مختصرة في الاكتساب والكفاءة والقياس.",
+      featuredTitle: "الحالات المميزة",
       otherTitle: "أعمال استراتيجية أخرى",
+      proofLine: "نماذج داعمة متاحة عند الطلب.",
       featured: [
         {
           title: "توسيع الاكتساب المدفوع إلى 120K+ اشتراك مدفوع",
@@ -528,9 +517,8 @@
     },
     contact: {
       kicker: "تواصل",
-      title: "احجز جلسة تشخيص مجانية لمسار النمو — 15 دقيقة",
-      intro:
-        "شارك موقعك والمشكلة الحالية. سأراجع مسار النمو وأتواصل معك بأهم نقاط التحسين.",
+      title: "احجز مراجعة مجانية",
+      intro: "أرسل موقعك والتحدي الحالي، وسأحدد أوضح فرص التحسين.",
       email: "البريد الإلكتروني",
       whatsapp: "واتساب",
       linkedin: "لينكدإن"
