@@ -72,42 +72,40 @@ function Header({ content, isAr }: { content: Content; isAr: boolean }) {
 function Hero({ content, isAr }: { content: Content; isAr: boolean }) {
   return (
     <section className="relative overflow-hidden bg-slate-950">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.35),transparent_34%),radial-gradient(circle_at_80%_18%,rgba(16,185,129,0.18),transparent_28%)]" />
-      <div className="relative mx-auto grid max-w-7xl gap-14 px-5 py-20 lg:grid-cols-[1.06fr_0.94fr] lg:items-center lg:py-28">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(37,99,235,0.22),transparent_38%)]" />
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 lg:grid-cols-2 lg:items-center lg:py-24">
         <div>
-          <div className="mb-6 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm font-bold text-blue-100">
+          <div className="mb-6 inline-flex rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-xs font-bold text-blue-100">
             {content.hero.badge}
           </div>
 
-          <h1 className="max-w-4xl text-4xl font-black tracking-tight text-white md:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl text-4xl font-black leading-[1.08] tracking-[-0.04em] text-white md:text-6xl">
             {content.hero.headline}
           </h1>
 
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">{content.hero.subheadline}</p>
+          <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 md:text-lg">{content.hero.subheadline}</p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap gap-2">
             {content.hero.proof.map((item) => (
-              <span key={item} className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm font-bold text-white">
+              <span key={item} className="rounded-full border border-white/10 px-3.5 py-2 text-xs font-bold text-slate-200">
                 {item}
               </span>
             ))}
           </div>
 
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href="#contact" className="rounded-full bg-blue-500 px-7 py-4 text-center text-sm font-black text-white shadow-xl shadow-blue-500/25 transition hover:bg-blue-400">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" className="rounded-full bg-blue-500 px-7 py-3.5 text-center text-sm font-black text-white shadow-[0_12px_30px_rgba(37,99,235,0.2)] transition hover:bg-blue-400">
               {content.hero.primaryCta}
             </a>
-            <a href="#case-studies" className="rounded-full border border-white/15 px-7 py-4 text-center text-sm font-black text-white transition hover:bg-white/10">
+            <a href="#case-studies" className="rounded-full border border-white/15 px-7 py-3.5 text-center text-sm font-black text-white transition hover:bg-white/10">
               {content.hero.secondaryCta}
             </a>
           </div>
-
-          <p className="mt-8 max-w-xl text-sm leading-6 text-slate-400">{content.hero.note}</p>
         </div>
 
-        <div className="relative">
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] p-5 shadow-2xl shadow-blue-950/50 backdrop-blur">
-            <div className="rounded-[1.5rem] bg-slate-900 p-6">
+        <div>
+          <div className="rounded-3xl border border-white/10 bg-white/[0.045] p-4 shadow-[0_24px_70px_rgba(2,6,23,0.35)] backdrop-blur">
+            <div className="rounded-2xl border border-white/[0.06] bg-slate-900/80 p-6">
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
                   <p className="text-sm text-slate-400">{isAr ? "لوحة النمو" : "Growth dashboard"}</p>
@@ -118,21 +116,21 @@ function Hero({ content, isAr }: { content: Content; isAr: boolean }) {
                 </span>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid auto-rows-fr gap-3 sm:grid-cols-2">
                 {[
                   [isAr ? "جودة الليدز" : "Lead Quality", "+38%"],
                   [isAr ? "دقة التتبع" : "Tracking Accuracy", "Clean"],
                   [isAr ? "مؤشر العائد" : "ROAS Focus", "9+"],
                   [isAr ? "تسريبات الفانل" : "Funnel Leaks", isAr ? "محددة" : "Mapped"]
                 ].map(([label, value]) => (
-                  <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div key={label} className="rounded-2xl border border-white/[0.08] bg-white/[0.035] p-4">
                     <p className="text-xs text-slate-400">{label}</p>
                     <p className="mt-2 text-2xl font-black text-white">{value}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950 p-5">
+              <div className="mt-4 rounded-2xl border border-white/[0.08] bg-slate-950/70 p-5">
                 <p className="mb-4 text-sm font-bold text-white">{isAr ? "مسار التشخيص" : "Audit flow"}</p>
                 <div className="space-y-3">
                   {(isAr
@@ -151,10 +149,6 @@ function Hero({ content, isAr }: { content: Content; isAr: boolean }) {
             </div>
           </div>
 
-          <div className={`absolute -bottom-7 ${isAr ? "-left-4" : "-right-4"} hidden rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl md:block`}>
-            <p className="text-xs text-slate-400">{isAr ? "الفكرة الأساسية" : "Core idea"}</p>
-            <p className="mt-1 text-sm font-black text-white">{isAr ? "منصة الإعلان ليست القصة كاملة" : "The ad platform is not the full story"}</p>
-          </div>
         </div>
       </div>
     </section>
@@ -163,33 +157,33 @@ function Hero({ content, isAr }: { content: Content; isAr: boolean }) {
 
 function TrustStack({ content }: { content: Content }) {
   return (
-    <section className="border-b border-slate-200 bg-white py-12">
+    <section className="border-b border-slate-200/70 bg-white py-20">
       <div className="mx-auto max-w-7xl px-5">
-        <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div className="max-w-xl">
             <p className="section-kicker">{content.trust.kicker}</p>
-            <h2 className="text-2xl font-black tracking-tight text-slate-950 md:text-3xl">
+            <h2 className="text-3xl font-black leading-tight tracking-tight text-slate-950 md:text-4xl">
               {content.trust.title}
             </h2>
           </div>
 
-          <div className="grid gap-4">
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-              <p className="mb-3 text-sm font-black text-slate-500">{content.trust.sectorsLabel}</p>
-              <div className="flex flex-wrap gap-2">
+          <div className="grid auto-rows-fr gap-4 md:grid-cols-2">
+            <div className="calm-card h-full p-6">
+              <p className="mb-4 text-sm font-black text-slate-500">{content.trust.sectorsLabel}</p>
+              <div className="flex flex-wrap gap-2.5">
                 {content.trust.sectors.map((item) => (
-                  <span key={item} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm">
+                  <span key={item} className="calm-chip text-slate-700">
                     {item}
                   </span>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-              <p className="mb-3 text-sm font-black text-slate-500">{content.trust.stackLabel}</p>
-              <div className="flex flex-wrap gap-2">
+            <div className="calm-card h-full p-6">
+              <p className="mb-4 text-sm font-black text-slate-500">{content.trust.stackLabel}</p>
+              <div className="flex flex-wrap gap-2.5">
                 {content.trust.stack.map((item) => (
-                  <span key={item} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
+                  <span key={item} className="calm-chip text-blue-700">
                     {item}
                   </span>
                 ))}
@@ -204,7 +198,7 @@ function TrustStack({ content }: { content: Content }) {
 
 function Highlights({ content }: { content: Content }) {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="section-kicker">{content.lang === "ar" ? "مؤشرات مختارة" : "Selected highlights"}</p>
@@ -212,10 +206,11 @@ function Highlights({ content }: { content: Content }) {
           <p className="section-intro">{content.highlightsIntro}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {content.highlights.map((item) => (
-            <div key={item.label} className="rounded-3xl border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:shadow-xl">
-              <p className="text-4xl font-black text-blue-600">{item.value}</p>
+            <div key={item.label} className="calm-card flex h-full min-h-52 flex-col p-7">
+              <div className="mb-6 h-px w-10 bg-blue-500" />
+              <p className="text-4xl font-black tracking-tight text-blue-600">{item.value}</p>
               <h3 className="mt-4 text-lg font-black text-slate-950">{item.label}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">{item.text}</p>
             </div>
@@ -228,7 +223,7 @@ function Highlights({ content }: { content: Content }) {
 
 function Problems({ content }: { content: Content }) {
   return (
-    <section className="bg-slate-950 py-20">
+    <section className="bg-slate-950 py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="section-kicker">{content.problems.kicker}</p>
@@ -236,16 +231,16 @@ function Problems({ content }: { content: Content }) {
           <p className="section-intro text-slate-300">{content.problems.intro}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mt-12 grid auto-rows-fr gap-5 md:grid-cols-2">
           {content.problems.items.map((item) => (
-            <article key={item.title} className="rounded-3xl border border-white/10 bg-white/[0.04] p-7">
+            <article key={item.title} className="flex h-full flex-col rounded-3xl border border-white/[0.08] bg-white/[0.035] p-7">
               <h3 className="text-xl font-black text-white">{item.title}</h3>
-              <div className="mt-5 grid gap-3">
-                <div className="rounded-2xl bg-red-500/10 p-4">
+              <div className="mt-5 grid flex-1 auto-rows-fr gap-3 sm:grid-cols-2">
+                <div className="h-full rounded-2xl border border-red-400/10 bg-red-500/[0.07] p-5">
                   <p className="text-xs font-black text-red-200">{content.lang === "ar" ? "قبل" : "Before"}</p>
                   <p className="mt-1 text-sm leading-6 text-slate-300">{item.before}</p>
                 </div>
-                <div className="rounded-2xl bg-emerald-500/10 p-4">
+                <div className="h-full rounded-2xl border border-emerald-400/10 bg-emerald-500/[0.07] p-5">
                   <p className="text-xs font-black text-emerald-200">{content.lang === "ar" ? "بعد" : "After"}</p>
                   <p className="mt-1 text-sm leading-6 text-slate-300">{item.after}</p>
                 </div>
@@ -260,7 +255,7 @@ function Problems({ content }: { content: Content }) {
 
 function GrowthSystem({ content }: { content: Content }) {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="section-kicker">{content.system.kicker}</p>
@@ -268,7 +263,7 @@ function GrowthSystem({ content }: { content: Content }) {
           <p className="section-intro">{content.system.intro}</p>
         </div>
 
-        <div className="mt-12 rounded-[2rem] border border-slate-200 bg-slate-50 p-6">
+        <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-6">
           <div className="grid gap-3 md:grid-cols-7">
             {content.system.chain.map((step, index) => (
               <div key={step} className="rounded-2xl bg-white p-4 text-center shadow-sm">
@@ -281,9 +276,9 @@ function GrowthSystem({ content }: { content: Content }) {
           </div>
         </div>
 
-        <div className="mt-6 grid gap-5 md:grid-cols-3">
+        <div className="mt-6 grid auto-rows-fr gap-5 md:grid-cols-3">
           {content.system.cards.map((card) => (
-            <article key={card.title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <article key={card.title} className="calm-card h-full p-7">
               <h3 className="text-xl font-black text-slate-950">{card.title}</h3>
               <p className="mt-3 leading-7 text-slate-600">{card.text}</p>
             </article>
@@ -296,7 +291,7 @@ function GrowthSystem({ content }: { content: Content }) {
 
 function Services({ content }: { content: Content }) {
   return (
-    <section id="services" className="bg-slate-50 py-20">
+    <section id="services" className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="section-kicker">{content.services.kicker}</p>
@@ -304,15 +299,15 @@ function Services({ content }: { content: Content }) {
           <p className="section-intro">{content.services.intro}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid auto-rows-fr gap-5 md:grid-cols-2 lg:grid-cols-3">
           {content.services.items.map((service, index) => (
-            <article key={service.title} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <span className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-sm font-black text-blue-600">
+            <article key={service.title} className="calm-card flex h-full flex-col p-7">
+              <span className="mb-6 flex h-11 w-11 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-xs font-black text-blue-600">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="text-xl font-black text-slate-950">{service.title}</h3>
               <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
-              <p className="mt-5 rounded-2xl bg-slate-50 p-4 text-sm font-bold leading-6 text-slate-700">
+              <p className="mt-auto border-t border-slate-200 pt-5 text-sm leading-6 text-slate-500">
                 {service.deliverables}
               </p>
             </article>
@@ -325,7 +320,7 @@ function Services({ content }: { content: Content }) {
 
 function CaseStudies({ content }: { content: Content }) {
   return (
-    <section id="case-studies" className="bg-white py-20">
+    <section id="case-studies" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="section-kicker">{content.cases.kicker}</p>
@@ -334,28 +329,29 @@ function CaseStudies({ content }: { content: Content }) {
         </div>
 
         <h3 className="mt-12 text-2xl font-black text-slate-950">{content.cases.featuredTitle}</h3>
-        <div className="mt-6 grid gap-6 lg:grid-cols-2">
+        <div className="mt-6 grid auto-rows-fr gap-5 lg:grid-cols-2">
           {content.cases.featured.map((item) => (
-            <article key={item.title} className="rounded-[2rem] border border-slate-200 bg-slate-50 p-7">
+            <article key={item.title} className="calm-card flex h-full flex-col p-7">
               <div className="flex flex-wrap gap-2">
-                <p className="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-blue-600">{item.tag}</p>
-                <p className="rounded-full bg-white px-3 py-1 text-xs font-black text-slate-500">{item.sector}</p>
+                <p className="calm-chip border-blue-100 bg-blue-50 text-blue-600">{item.tag}</p>
+                <p className="calm-chip text-slate-500">{item.sector}</p>
               </div>
-              <h4 className="mt-4 text-2xl font-black tracking-tight text-slate-950">{item.title}</h4>
-              <div className="mt-6 grid gap-4">
+              <h4 className="mt-5 text-xl font-black leading-snug tracking-tight text-slate-950 md:text-2xl">{item.title}</h4>
+              <div className="mt-6 grid gap-5 sm:grid-cols-2">
                 <Info label={content.lang === "ar" ? "التحدي" : "Challenge"} text={item.challenge} />
-                <Info label={content.lang === "ar" ? "الحل" : "Solution"} text={item.action} />
                 <Info label={content.lang === "ar" ? "النتيجة" : "Result"} text={item.result} />
-                <Info label={content.lang === "ar" ? "الخلاصة" : "Insight"} text={item.insight} />
               </div>
+              <p className="mt-auto border-t border-slate-200 pt-5 text-xs font-bold text-slate-400">
+                {content.cases.proofLine}
+              </p>
             </article>
           ))}
         </div>
 
         <h3 className="mt-14 text-2xl font-black text-slate-950">{content.cases.otherTitle}</h3>
-        <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid auto-rows-fr gap-5 md:grid-cols-2 lg:grid-cols-4">
           {content.cases.other.map((item) => (
-            <article key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <article key={item.title} className="calm-card h-full p-6">
               <h4 className="text-lg font-black text-slate-950">{item.title}</h4>
               <p className="mt-3 text-sm leading-6 text-slate-600">{item.text}</p>
             </article>
@@ -370,14 +366,14 @@ function Info({ label, text }: { label: string; text: string }) {
   return (
     <div>
       <p className="text-xs font-black uppercase tracking-[0.18em] text-slate-400">{label}</p>
-      <p className="mt-1 leading-7 text-slate-700">{text}</p>
+      <p className="mt-1 text-sm leading-6 text-slate-700">{text}</p>
     </div>
   );
 }
 
 function Method({ content }: { content: Content }) {
   return (
-    <section id="method" className="bg-slate-950 py-20">
+    <section id="method" className="bg-slate-950 py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="section-kicker">{content.method.kicker}</p>
@@ -385,9 +381,9 @@ function Method({ content }: { content: Content }) {
           <p className="section-intro text-slate-300">{content.method.intro}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid auto-rows-fr gap-5 md:grid-cols-2 lg:grid-cols-3">
           {content.method.steps.map((step, index) => (
-            <article key={step.title} className="rounded-3xl border border-white/10 bg-white/[0.04] p-7">
+            <article key={step.title} className="h-full rounded-3xl border border-white/[0.08] bg-white/[0.035] p-7">
               <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-500 text-sm font-black text-white">
                 {index + 1}
               </span>
@@ -403,14 +399,14 @@ function Method({ content }: { content: Content }) {
 
 function About({ content }: { content: Content }) {
   return (
-    <section id="about" className="bg-slate-50 py-20">
+    <section id="about" className="bg-slate-50 py-24">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
         <div>
           <p className="section-kicker">{content.about.kicker}</p>
           <h2 className="section-title text-slate-950">{content.about.title}</h2>
         </div>
 
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="calm-card p-8">
           {content.about.paragraphs.map((paragraph) => (
             <p key={paragraph} className="mb-5 text-lg leading-8 text-slate-700 last:mb-0">
               {paragraph}
@@ -424,7 +420,7 @@ function About({ content }: { content: Content }) {
 
 function Contact({ content }: { content: Content }) {
   return (
-    <section id="contact" className="bg-white py-20">
+    <section id="contact" className="bg-white py-24">
       <div className="mx-auto max-w-5xl px-5 text-center">
         <p className="section-kicker">{content.contact.kicker}</p>
         <h2 className="section-title text-slate-950">{content.contact.title}</h2>

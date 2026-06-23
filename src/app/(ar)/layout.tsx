@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s"
   },
   description:
-    "تسويق أداء ونمو لفرق B2B والعقارات في الخليج يركز على الفرص المؤهلة، التتبع، ملاحظات CRM، وقرارات الإيرادات."
+    "تسويق أداء ونمو لفرق الخليج يركز على الفرص المؤهلة، التتبع، ملاحظات المبيعات، وقرارات الإيرادات."
 };
 
 export default function ArabicLayout({ children }: Readonly<{ children: React.ReactNode }>) {
