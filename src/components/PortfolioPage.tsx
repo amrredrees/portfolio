@@ -12,7 +12,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
     <main dir={content.dir} className={isAr ? "font-arabic" : ""}>
       <Header content={content} isAr={isAr} />
       <Hero content={content} isAr={isAr} />
-      <TrustStack locale={locale} />
+      <TrustStack content={content} />
       <Highlights content={content} />
       <Problems content={content} />
       <GrowthSystem content={content} />
@@ -161,33 +161,23 @@ function Hero({ content, isAr }: { content: Content; isAr: boolean }) {
   );
 }
 
-function TrustStack({ locale }: { locale: Locale }) {
-  const isAr = locale === "ar";
-
-  const sectors = isAr
-    ? ["B2B", "العقارات", "التعليم", "الرعاية الصحية", "SaaS", "الخدمات", "التجارة الإلكترونية"]
-    : ["B2B", "Real Estate", "Education", "Healthcare", "SaaS", "Services", "E-commerce"];
-
-  const tools = ["GA4", "GTM", "Meta Pixel", "Google Ads", "Looker Studio", "HubSpot", "CRM"];
-
+function TrustStack({ content }: { content: Content }) {
   return (
     <section className="border-b border-slate-200 bg-white py-12">
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div>
-            <p className="section-kicker">{isAr ? "ثقة وسياق" : "Trust context"}</p>
+            <p className="section-kicker">{content.trust.kicker}</p>
             <h2 className="text-2xl font-black tracking-tight text-slate-950 md:text-3xl">
-              {isAr
-                ? "خبرة عملية في قطاعات تحتاج ليدز مؤهلة وقرارات إنفاق دقيقة."
-                : "Practical experience across sectors where lead quality and spend decisions matter."}
+              {content.trust.title}
             </h2>
           </div>
 
           <div className="grid gap-4">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-              <p className="mb-3 text-sm font-black text-slate-500">{isAr ? "قطاعات وخبرات" : "Sectors"}</p>
+              <p className="mb-3 text-sm font-black text-slate-500">{content.trust.sectorsLabel}</p>
               <div className="flex flex-wrap gap-2">
-                {sectors.map((item) => (
+                {content.trust.sectors.map((item) => (
                   <span key={item} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm">
                     {item}
                   </span>
@@ -196,9 +186,9 @@ function TrustStack({ locale }: { locale: Locale }) {
             </div>
 
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5">
-              <p className="mb-3 text-sm font-black text-slate-500">{isAr ? "أدوات وتقنيات" : "Tech stack"}</p>
+              <p className="mb-3 text-sm font-black text-slate-500">{content.trust.stackLabel}</p>
               <div className="flex flex-wrap gap-2">
-                {tools.map((item) => (
+                {content.trust.stack.map((item) => (
                   <span key={item} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
                     {item}
                   </span>
@@ -467,7 +457,9 @@ function Footer({ content }: { content: Content }) {
   return (
     <footer className="border-t border-slate-200 bg-white py-8">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-5 text-sm text-slate-500 md:flex-row">
-        <p>© {new Date().getFullYear()} Amr Edrees. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} Amr Edrees. {content.lang === "ar" ? "جميع الحقوق محفوظة." : "All rights reserved."}
+        </p>
         <p>{content.footer}</p>
       </div>
     </footer>

@@ -4,7 +4,7 @@ import { PortfolioPage } from "@/components/PortfolioPage";
 export const metadata: Metadata = {
   title: "عمرو إدريس | متخصص تسويق أداء ونمو",
   description:
-    "بورتفوليو تسويق أداء ونمو يركز على توليد الليدز، الفانلز، التتبع، CRM، التقارير، وقرارات النمو.",
+    "أنظمة نمو لفرق B2B والعقارات في الخليج تربط الإعلانات بالفرص المؤهلة، التتبع، CRM، والإيرادات.",
   alternates: {
     canonical: "/ar",
     languages: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "عمرو إدريس | متخصص تسويق أداء ونمو",
     description:
-      "ليدز أفضل، تتبع أوضح، فانلز أقوى، وقرارات نمو أذكى.",
+      "حوّل الإنفاق الإعلاني في الخليج إلى فرص B2B وعقارية مؤهلة.",
     type: "website"
   }
 };

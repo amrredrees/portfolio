@@ -7,21 +7,29 @@
     nav: [
       { label: "Services", href: "#services" },
       { label: "Case Studies", href: "#case-studies" },
-      { label: "Framework", href: "#method" },
+      { label: "Growth OS", href: "#method" },
       { label: "About", href: "#about" }
     ],
     headerCta: "Book a 15-min Growth Audit",
     hero: {
       badge: "B2B • Real Estate • GCC Growth • Tracking • Lead Quality",
       headline:
-        "I help B2B and real estate businesses in the GCC improve lead quality, tracking accuracy, and revenue decisions from paid media.",
+        "Turn GCC ad spend into qualified B2B pipeline and real estate opportunities — not just more leads.",
       subheadline:
-        "I’m Amr Edrees, a Performance Marketing & Growth Specialist focused on building acquisition systems that connect ads, funnels, tracking, CRM feedback, and sales outcomes.",
+        "I help B2B and real estate teams connect paid media, landing pages, tracking, CRM feedback, and sales outcomes so they can scale what creates real revenue.",
       primaryCta: "Book a Free 15-min Growth Audit",
       secondaryCta: "View Case Studies",
       proof: ["120K+ paid subscriptions", "15M+ SAR managed spend", "GCC market experience"],
       note:
         "Not just more clicks. Better leads, cleaner attribution, stronger funnels, and decisions your sales team can actually use."
+    },
+    trust: {
+      kicker: "Trust context",
+      title: "GCC growth experience across sectors where lead quality and spend decisions matter.",
+      sectorsLabel: "Sectors",
+      sectors: ["B2B", "Real Estate", "Education", "Healthcare", "SaaS", "Services", "E-commerce"],
+      stackLabel: "Tech stack",
+      stack: ["GA4", "GTM", "Meta Pixel", "Google Ads", "Looker Studio", "HubSpot", "CRM"]
     },
     highlightsTitle: "Selected performance highlights",
     highlightsIntro:
@@ -211,7 +219,7 @@
     },
     method: {
       kicker: "Proprietary framework",
-      title: "The Growth Architecture OS",
+      title: "Growth Architecture OS",
       intro: "A practical operating framework for diagnosing, launching, tracking, and optimizing growth decisions.",
       steps: [
         {
@@ -268,21 +276,29 @@
     nav: [
       { label: "الخدمات", href: "#services" },
       { label: "الحالات", href: "#case-studies" },
-      { label: "المنهجية", href: "#method" },
+      { label: "نظام النمو", href: "#method" },
       { label: "نبذة", href: "#about" }
     ],
     headerCta: "احجز تشخيص 15 دقيقة",
     hero: {
       badge: "B2B • عقارات • نمو في الخليج • تتبع • جودة ليدز",
       headline:
-        "أساعد شركات B2B والعقارات في الخليج على تحسين جودة الليدز، وربط الإعلانات بنظام تتبع وقرارات إيرادات أوضح.",
+        "حوّل الإنفاق الإعلاني في الخليج إلى فرص B2B وعقارية مؤهلة — وليس مجرد ليدز أكثر.",
       subheadline:
-        "أنا عمرو إدريس، متخصص Performance Marketing & Growth، أركز على بناء أنظمة اكتساب تربط بين الإعلانات، الفانل، التتبع، الـ CRM، ملاحظات فريق المبيعات، ونتائج البيزنس.",
+        "أساعد فرق B2B والعقارات على ربط الإعلانات، صفحات الهبوط، التتبع، ملاحظات الـ CRM، ونتائج المبيعات لتوسيع ما يصنع إيرادات فعلية.",
       primaryCta: "احجز تشخيص مجاني 15 دقيقة",
       secondaryCta: "شاهد الحالات",
       proof: ["120K+ اشتراك مدفوع", "15M+ ريال ميزانيات إعلانية", "خبرة في أسواق الخليج"],
       note:
         "ليس الهدف كليكات أكثر فقط، بل ليدز أفضل، تتبع أوضح، فانل أقوى، وقرارات يستطيع فريق المبيعات الاعتماد عليها."
+    },
+    trust: {
+      kicker: "الثقة والسياق",
+      title: "خبرة نمو في الخليج عبر قطاعات تعتمد على جودة الفرص ودقة قرارات الإنفاق.",
+      sectorsLabel: "القطاعات",
+      sectors: ["B2B", "العقارات", "التعليم", "الرعاية الصحية", "SaaS", "الخدمات", "التجارة الإلكترونية"],
+      stackLabel: "الأدوات والتقنيات",
+      stack: ["GA4", "GTM", "Meta Pixel", "Google Ads", "Looker Studio", "HubSpot", "CRM"]
     },
     highlightsTitle: "أبرز مؤشرات الأداء",
     highlightsIntro:

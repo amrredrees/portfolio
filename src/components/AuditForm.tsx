@@ -12,10 +12,12 @@ export function AuditForm({ locale }: { locale: "en" | "ar" }) {
     event.preventDefault();
 
     const message = isAr
-      ? `مرحبًا عمرو، أريد جلسة تشخيص مجانية لمسار النمو.%0A%0Aالاسم: ${encodeURIComponent(name)}%0Aالموقع: ${encodeURIComponent(website)}%0Aالمشكلة الحالية: ${encodeURIComponent(problem)}`
-      : `Hi Amr, I want to request a free growth audit session.%0A%0AName: ${encodeURIComponent(name)}%0AWebsite: ${encodeURIComponent(website)}%0ACurrent problem: ${encodeURIComponent(problem)}`;
+      ? `مرحبًا عمرو، أريد جلسة تشخيص مجانية لمسار النمو.\n\nالاسم: ${name}\nالموقع: ${website || "غير متوفر"}\nالمشكلة الحالية: ${problem}`
+      : `Hi Amr, I want to request a free growth audit session.\n\nName: ${name}\nWebsite: ${website || "Not provided"}\nCurrent problem: ${problem}`;
 
-    window.open(`https://wa.me/966540355029?text=${message}`, "_blank", "noreferrer");
+    const whatsappUrl = new URL("https://wa.me/966540355029");
+    whatsappUrl.searchParams.set("text", message);
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -28,6 +30,8 @@ export function AuditForm({ locale }: { locale: "en" | "ar" }) {
           <span className="text-sm font-black text-slate-700">{isAr ? "الاسم" : "Name"}</span>
           <input
             required
+            name="name"
+            autoComplete="name"
             value={name}
             onChange={(event) => setName(event.target.value)}
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-blue-500"
@@ -38,6 +42,11 @@ export function AuditForm({ locale }: { locale: "en" | "ar" }) {
         <label className="block">
           <span className="text-sm font-black text-slate-700">{isAr ? "الموقع الإلكتروني" : "Website"}</span>
           <input
+            required
+            name="website"
+            type="url"
+            inputMode="url"
+            autoComplete="url"
             value={website}
             onChange={(event) => setWebsite(event.target.value)}
             className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-blue-500"
@@ -50,6 +59,7 @@ export function AuditForm({ locale }: { locale: "en" | "ar" }) {
         <span className="text-sm font-black text-slate-700">{isAr ? "ما المشكلة الحالية؟" : "Current problem"}</span>
         <textarea
           required
+          name="problem"
           value={problem}
           onChange={(event) => setProblem(event.target.value)}
           className="mt-2 min-h-28 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-blue-500"
